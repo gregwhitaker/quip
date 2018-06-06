@@ -1,2 +1,3 @@
 rootProject.name = 'quip'
+include 'quip-server'
 
