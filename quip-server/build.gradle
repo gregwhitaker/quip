@@ -1,6 +1,7 @@
 import com.bmuschko.gradle.docker.tasks.image.*
 
 plugins {
+    id 'application'
     id 'io.ratpack.ratpack-java' version '1.5.4'
     id 'com.bmuschko.docker-remote-api' version '3.2.1'
 }
@@ -26,7 +27,7 @@ distZip {
     archiveName = 'quip-server.zip'
 }
 
-task buildImage(type: DockerBuildImage) {
+task buildImage(type: DockerBuildImage, dependsOn: build) {
     inputDir = new File("${projectDir}")
     dockerFile = new File("${projectDir}/src/docker/Dockerfile")
 }
