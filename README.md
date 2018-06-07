@@ -1,4 +1,10 @@
 # quip
+[![Build Status](https://travis-ci.org/gregwhitaker/quip.svg?branch=master)](https://travis-ci.org/gregwhitaker/quip)
+
+An HTTP status code echo service for testing.
+
+## Bugs and Feedback
+For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/quip/issues).
 
 ## License
 Copyright 2018 Greg Whitaker
